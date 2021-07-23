@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
   View,
-  Text,
   TextInput,
   TouchableOpacity,
   Image,
@@ -44,6 +43,7 @@ export function TaskItem({
 
   function handleSubmitEditing() {
     editTask(task.id, newTaskTitle);
+    setIsEditing(false);
   }
 
   useEffect(() => {
@@ -115,7 +115,6 @@ export function TaskItem({
           <Image source={trashIcon} />
         </TouchableOpacity>
       </View>
-
     </>
   );
 }
