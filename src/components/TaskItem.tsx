@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   taskText: {
-    color: '#666',
+    color: '#e7e7e7',
     fontFamily: 'Inter-Medium',
   },
   taskMarkerDone: {
